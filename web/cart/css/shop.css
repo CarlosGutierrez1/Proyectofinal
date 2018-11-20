@@ -1027,13 +1027,30 @@ color: #000;
     float: right;
 }
 .single_page h6 {
+    top: 90%;
+    position: absolute;
     font-size: 1.2em;
     font-weight: 700;
     letter-spacing: 1px;
     color: #4e4c4c;
     margin-bottom: 1em;
 }
+
+
+.boton{
+    
+     border: 20px;
+     left: 26%;
+     top: 60%;
+     position: absolute;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: #FFF;
+    margin-bottom: 1em;
+    background-color: #c9302c;
+}
 .single_page p {
+    
 	line-height: 2em;
     color: #888;
 }
@@ -1135,7 +1152,7 @@ input.button.add {
 		padding: 15px;
 		width: 47%;
 		margin: 0.5em;
-		float: left;
+		
 	}
 	#staplesbmincart {
 		left: 52%;

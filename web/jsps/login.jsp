@@ -24,12 +24,23 @@
         ResultSet rs= st.executeQuery("select * from usuario where email='"+email+"'");
         if(rs.next()){
             if(rs.getString(6).equals(contra)){
+                if(email.equals("admin1") && contra.equals("admin1")){
+                    %>
+                <script>
+                    window.alert("Bienvenido admin!!");
+                    setTimeout("window.location.href='admin.jsp'",50);
+                    </script>
+                    <%
+                }else{
+
+
                 %>
                 <script>
                     window.alert("Bienvenido!!");
-                    setTimeout("window.history.go(-1)",50);
+                    setTimeout("window.location.href='../cart/shop.jsp'",50);
                     </script>
                     <%
+                        }
             }else{
                 %>
                 <script>

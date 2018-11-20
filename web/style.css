@@ -25,6 +25,31 @@
 
 
 }
+
+.vist{
+   
+    
+    
+    
+    
+}
+
+.bototienda{
+    border: 20px;
+    border-radius: 40px;
+    background-color:  darkblue;
+    color: #fff;
+    position: absolute;
+    left: 45%;
+    font-size: 25px;
+    height: 50px;
+    width: 200px;
+    
+}
+.bototienda:hover{
+    background-color:  #000000;
+    color:  #ffffff;
+}
 .cerrar{
 	color: red;
 	font-weight: 900;
