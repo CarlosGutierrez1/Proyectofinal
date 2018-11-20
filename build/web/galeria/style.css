@@ -1,0 +1,164 @@
+.cerrar{
+	color: red;
+	font-weight: 900;
+	text-align: right;
+	font-size: 10px;
+        position: absolute;
+        z-index:  3;
+        
+}
+.comentarios{
+    height: 99%;
+    width: 20%;
+    background-color:  #1a6c95;
+    position: absolute;
+    top: 0.5%;
+    bottom: 0.5%;
+    left: 79.2%;
+    z-index: 2;
+    border: 10px;
+    border-radius: 15px;
+    display: none;
+    
+}
+.seccion{
+    height: 40px;
+    width: 100%;
+    background-color: #843534;
+    border: 10px;
+    border-radius: 15px;
+    
+}
+.au{
+    left: 30%;
+    position:  absolute;
+    top: 1%;
+    font-size: 20px;
+}
+#autoselect{
+    left: 35%;
+    position:  absolute;
+    top: 1.5%;
+}
+.au2{
+    left: 50%;
+    position:  absolute;
+    top: 1%;
+    font-size: 20px;
+}
+#fechaselect{
+    left: 60%;
+    position:  absolute;
+    top: 1.5%;
+}
+.boto{
+    left: 75%;
+    position:  absolute;
+    top: 1.5%;
+    border-radius: 15px;
+    border: 10px;
+    
+    width: 70px;
+}
+.botonima{
+    position: absolute;
+    z-index: 5;
+    border: 10px;
+    border-radius: 15px;
+}
+.botonubi{
+    position: absolute;
+    z-index: 5;
+    border: 10px;
+    border-radius: 15px;
+    left: 30%;
+}
+.coment{
+    position: absolute;
+    height: 95%;
+    width: 30%;
+    background-color:  rgba(26, 107, 147, 0.99);
+    border: 10px;
+    border-radius: 15px;
+    left: 35%;
+    top: 3%;
+}
+.cajita{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 15px;
+    border-radius: 20px;
+    top: 2%;
+    left: 5%;
+}
+.tablita{
+    text-align: center;
+    left: 5%;
+    width: 519px;
+    background-color:  rgba(209, 201, 238, 1);
+    
+   
+}
+.untr{
+    
+    
+    background-color:  #843534;
+    
+    
+    }
+.pri{
+    
+    color:  #000;
+    
+    }
+    .comenta{
+        left: 12%;
+        top: 93.5%;
+        position: absolute;
+    }
+    .comenta input{
+        border: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .bo{
+        left: 35%;
+        top: 100%;
+        position: absolute;
+    }
+    pri1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    pri2{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+    .mapita{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background-color:  #843534;
+        top: 12%;
+        left: 12%;
+        border: 10px;
+        border-radius: 15px;
+        
+    }
+    .mapa{
+        width: 98%;
+        height: 98%;
+        position: absolute;
+        top: 0.8%;
+        left: 0.8%;
+    }
+    .vol{
+        position: absolute;
+        top: 97%;
+        left: 0.3%;
+        
+    }

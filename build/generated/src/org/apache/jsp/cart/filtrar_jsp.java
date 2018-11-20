@@ -1,0 +1,475 @@
+package org.apache.jsp.cart;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import java.util.ArrayList;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.sql.DriverManager;
+
+public final class filtrar_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("\t<title>ColHeartShop</title>\n");
+      out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
+      out.write("\t\n");
+      out.write("\t<script type=\"application/x-javascript\">\n");
+      out.write("\t\taddEventListener(\"load\", function () {\n");
+      out.write("\t\t\tsetTimeout(hideURLbar, 0);\n");
+      out.write("\t\t}, false);\n");
+      out.write("\n");
+      out.write("\t\tfunction hideURLbar() {\n");
+      out.write("\t\t\twindow.scrollTo(0, 1);\n");
+      out.write("\t\t}\n");
+      out.write("\t</script>\n");
+      out.write("\t<!-- //custom-theme -->\n");
+      out.write("\t<link href=\"css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"css/shop.css\" type=\"text/css\" media=\"screen\" property=\"\" />\n");
+      out.write("\t<link href=\"css/style7.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
+      out.write("\t<!-- Owl-carousel-CSS -->\n");
+      out.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/jquery-ui1.css\">\n");
+      out.write("\t<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
+      out.write("\t<!-- font-awesome-icons -->\n");
+      out.write("\t<link href=\"css/font-awesome.css\" rel=\"stylesheet\">\n");
+      out.write("\t<!-- //font-awesome-icons -->\n");
+      out.write("\t<link href=\"//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800\"\n");
+      out.write("\t    rel=\"stylesheet\">\n");
+      out.write("\t<link href=\"//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800\" rel=\"stylesheet\">\n");
+      out.write("</head>\n");
+      out.write("\n");
+      out.write("<body>\n");
+      out.write("\t<!-- banner -->\n");
+      out.write("<div class=\"banner_top innerpage\" id=\"home\">\n");
+      out.write("\t\t<div class=\"wrapper_top_w3layouts\">\n");
+      out.write("\t\t\t<div class=\"header_agileits\">\n");
+      out.write("\t\t\t\t<div class=\"logo inner_page_log\">\n");
+      out.write("\t\t\t\t\t<h1><a class=\"navbar-brand\" href=\"index.html\"><span>ColHeart</span> <i>Shop</i></a></h1>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"overlay overlay-contentpush\">\n");
+      out.write("\t\t\t\t\t<button type=\"button\" class=\"overlay-close\"><i class=\"fa fa-times\" aria-hidden=\"true\"></i></button>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t<nav>\n");
+      out.write("\t\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t\t<li><a href=\"index.html\" class=\"active\">Inicio</a></li>\n");
+      out.write("\t\t\t\t\t\t\t<li><a href=\"..\\index.html\">Sobre Nosotros</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t<li><a href=\"shop.html\">Shop Now</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t\t</nav>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<div class=\"mobile-nav-button\">\n");
+      out.write("\t\t\t\t\t<button id=\"trigger-overlay\" type=\"button\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></button>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<!-- cart details -->\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<!-- //cart details -->\n");
+      out.write("\t\t<!-- search -->\n");
+      out.write("\t\t\n");
+      out.write("\t\t<!-- //search -->\n");
+      out.write("\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\t\t<!-- /banner_inner -->\n");
+      out.write("\t\t<div class=\"services-breadcrumb_w3ls_agileinfo\">\n");
+      out.write("\t\t\t<div class=\"inner_breadcrumb_agileits_w3\">\n");
+      out.write("\n");
+      out.write("\t\t\t\t<ul class=\"short\">\n");
+      out.write("\t\t\t\t\t<li><a href=\"index.html\">Home</a><i>|</i></li>\n");
+      out.write("\t\t\t\t\t<li>Shop</li>\n");
+      out.write("\t\t\t\t</ul>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<!-- //banner_inner -->\n");
+      out.write("\t</div>\n");
+      out.write("\n");
+      out.write("\t<!-- //banner -->\n");
+      out.write("\t<!-- top Products -->\n");
+      out.write("\t<div class=\"ads-grid_shop\">\n");
+      out.write("\t\t<div class=\"shop_inner_inf\">\n");
+      out.write("\t\t\t<!-- tittle heading -->\n");
+      out.write("\n");
+      out.write("\t\t\t<!-- //tittle heading -->\n");
+      out.write("\t\t\t<!-- product left -->\n");
+      out.write("\t\t\t<div class=\"side-bar col-md-3\">\n");
+      out.write("                            \n");
+      out.write("\t\t\t\t<div class=\"search-hotel\">\n");
+      out.write("\t\t\t\t\t<h3 class=\"agileits-sear-head\">Search Here..</h3>\n");
+      out.write("\t\t\t\t\t<form action=\"filtrar.jsp\" method=\"post\">\n");
+      out.write("\t\t\t\t\t\t<input type=\"search\" placeholder=\"Product name...\" name=\"search\" required=\"\">\n");
+      out.write("\t\t\t\t\t\t<input type=\"submit\" value=\" \">\n");
+      out.write("\t\t\t\t\t</form>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<!-- price range -->\n");
+      out.write("\t\t\t\t<div class=\"range\">\n");
+      out.write("\t\t\t\t\t<h3 class=\"agileits-sear-head\">Price range</h3>\n");
+      out.write("\t\t\t\t\t<ul class=\"dropdown-menu6\">\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t\t<div id=\"slider-range\"></div>\n");
+      out.write("                                                        <input type=\"text\" id=\"amount\"  name=\"valores\" style=\"border: 0; color: #ffffff; font-weight: normal;\" />\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<!-- //price range -->\n");
+      out.write("\t\t\t\t<!--preference -->\n");
+      out.write("\t\t\t\t<div class=\"left-side\">\n");
+      out.write("\t\t\t\t\t<h3 class=\"agileits-sear-head\">Bolso</h3>\n");
+      out.write("\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">Llavero</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">Vaso</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">Portavaso</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\"></span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<!-- // preference -->\n");
+      out.write("\t\t\t\t<!-- discounts -->\n");
+      out.write("\t\t\t\t<div class=\"left-side\">\n");
+      out.write("\t\t\t\t\t<h3 class=\"agileits-sear-head\">Descuento</h3>\n");
+      out.write("\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">5% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">10% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">20% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">30% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">50% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t\t<li>\n");
+      out.write("\t\t\t\t\t\t\t<input type=\"checkbox\" class=\"checked\">\n");
+      out.write("\t\t\t\t\t\t\t<span class=\"span\">60% o mas</span>\n");
+      out.write("\t\t\t\t\t\t</li>\n");
+      out.write("\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t\t<!-- //discounts -->\n");
+      out.write("\t\t\t\t<!-- reviews -->\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t<!-- //reviews -->\n");
+      out.write("\t\t\t\t<!-- deals -->\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\t<!-- //deals -->\n");
+      out.write("                               \n");
+      out.write("\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<!-- //product left -->\n");
+      out.write("                        \n");
+      out.write("                        \n");
+      out.write("                         ");
+
+                                                                                Class.forName("com.mysql.jdbc.Driver");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+            Statement st=con.createStatement();
+            ResultSet rs= st.executeQuery("select *  from articulo");
+            
+            ArrayList list1 =new  ArrayList();
+            ArrayList list2 =new  ArrayList();
+            ArrayList list3 =new  ArrayList();
+            ArrayList list4 =new  ArrayList();
+            ArrayList list5 =new  ArrayList();
+            ArrayList list6 =new  ArrayList();
+            int i = 0;
+
+while (rs.next()){
+                 list1.add(rs.getString("id_articulo"));
+                 list2.add(rs.getString("nombre"));
+                 list3.add(rs.getString("stock"));
+                 list4.add(rs.getString("descripcion"));
+                 list5.add(rs.getString("valor"));
+                 list6.add(rs.getString("imagen"));
+                 
+             }
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+      out.write("\n");
+      out.write("                                                                            \n");
+      out.write("                                                                            \n");
+      out.write("                                                                            \n");
+      out.write("\t\t\t<!-- product right -->\n");
+      out.write("                        \n");
+      out.write("                        \n");
+      out.write("\t\t\t<div class=\"left-ads-display col-md-9\">\n");
+      out.write("\t\t\t\t<div class=\"wrapper_top_shop\">\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\t\t\t\t\t<!-- product-sec1 -->\n");
+      out.write("                                        \n");
+      out.write("\t\t\t\t\t<div class=\"product-sec1\">\n");
+      out.write("\t\t\t\t\t\t<!--/mens-->\n");
+      out.write("                                                 ");
+
+                                                                        
+                                                                        while(i<list1.size()){
+                                                                            
+                                                                        
+      out.write("\n");
+      out.write("\t\t\t\t\t\t<div class=\"col-md-4 product-men\">\n");
+      out.write("\t\t\t\t\t\t\t<div class=\"product-shoe-info shoe\">\n");
+      out.write("\t\t\t\t\t\t\t\t<div class=\"men-pro-item\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t<div class=\"men-thumb-item\">\n");
+      out.write("                                                                            <img src=\"");
+out.print(list6.get(i));
+      out.write("\" alt=\"\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<div class=\"men-cart-pro\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<div class=\"inner-men-cart-pro\">\n");
+      out.write("                                                                                            <form  action=\"verarticulo.jsp\" method=\"post\">\n");
+      out.write("                                                                                                <input type=\"hidden\" value=\"");
+out.print(list1.get(i));
+      out.write("\" name=\"idarticulo\">\n");
+      out.write("                                                                                            <input type=\"submit\"  class=\"link-product-add-cart\" value=\"Ver\" style=\" border: 10px; border-radius: 8px;\">\n");
+      out.write("                                                                                            </form>\n");
+      out.write("                                                                                        </div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<span class=\"product-new-top\">New</span>\n");
+      out.write("\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("                                                                    \n");
+      out.write("                                                                    \n");
+      out.write("                                                                    \n");
+      out.write("                                                                   \n");
+      out.write("\t\t\t\t\t\t\t\t\t<div class=\"item-info-product\">\n");
+      out.write("                                                                            \n");
+      out.write("                                                                            \n");
+      out.write("                                                                           \n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<h4>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<a href=\"single.html\">");
+out.print(list2.get(i));
+      out.write(" </a>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</h4>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<div class=\"info-product-price\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<div class=\"grid_meta\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"product_price\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"grid-price \">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"money \">");
+out.print(list5.get(i));
+      out.write(" COP</span>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("                                                                       \n");
+      out.write("\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t<!-- //mens -->\n");
+      out.write("\t\t\t\t\t\t<!-- /womens -->\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t<!-- //womens -->\n");
+      out.write("\t\t\t\t\t\t<!-- /mens -->\n");
+      out.write("\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t<!-- //mens -->\n");
+      out.write("\n");
+      out.write("                                                                                                        ");
+         
+                                                                         i++;       
+                                                                          }      
+                                                                                
+      out.write("\n");
+      out.write("\t\t\t\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t<!-- //product-sec1 -->\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\t<!-- //top products -->\n");
+      out.write("\t\n");
+      out.write("\t<!-- /newsletter-->\n");
+      out.write("\t\n");
+      out.write("\t<!-- //newsletter-->\n");
+      out.write("\t<!-- footer -->\n");
+      out.write("\t<div class=\"footer_agileinfo_w3\">\n");
+      out.write("\t\t<div class=\"footer_inner_info_w3ls_agileits\">\n");
+      out.write("\t\t\t<div class=\"col-md-3 footer-left\">\n");
+      out.write("\t\t\t\t<h2><a href=\"index.html\"><span>ColHeart</span>Shop</a></h2>\n");
+      out.write("\t\t\t\t<p>Impulsando el arte Colombiano</p>\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"col-md-9 footer-right\">\n");
+      out.write("\t\t\t\t<div class=\"sign-grds\">\n");
+      out.write("\t\t\t\t\t<div class=\"col-md-4 sign-gd\">\n");
+      out.write("\t\t\t\t\t\t<h4>Nuestra <span>Estructura</span> </h4>\n");
+      out.write("\t\t\t\t\t\t<ul>\n");
+      out.write("\t\t\t\t\t\t\t<li><a href=\"index.html\">Inicio</a></li>\n");
+      out.write("\t\t\t\t\t\t\t<li><a href=\"..\\index.html\">Sobre Nosotros</a></li>\n");
+      out.write("\t\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t\t<div class=\"clearfix\"></div>\n");
+      out.write("\n");
+      out.write("\t\t\t<p class=\"copy-right-w3ls-agileits\">&copy 2018 ColHeart Shop. All rights reserved </p>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t</div>\n");
+      out.write("\t\n");
+      out.write("\t<!-- //footer -->\n");
+      out.write("<a href=\"#home\" id=\"toTop\" class=\"scroll\" style=\"display: block;\"> <span id=\"toTopHover\" style=\"opacity: 1;\"> </span></a>\n");
+      out.write("\t<!-- js -->\n");
+      out.write("\t<script type=\"text/javascript\" src=\"js/jquery-2.1.4.min.js\"></script>\n");
+      out.write("\t<!-- //js -->\n");
+      out.write("\t<!-- cart-js -->\n");
+      out.write("\t<script src=\"js/minicart.js\"></script>\n");
+      out.write("\t<script>\n");
+      out.write("\t\tshoe.render();\n");
+      out.write("\n");
+      out.write("\t\tshoe.cart.on('shoe_checkout', function (evt) {\n");
+      out.write("\t\t\tvar items, len, i;\n");
+      out.write("\n");
+      out.write("\t\t\tif (this.subtotal() > 0) {\n");
+      out.write("\t\t\t\titems = this.items();\n");
+      out.write("\n");
+      out.write("\t\t\t\tfor (i = 0, len = items.length; i < len; i++) {}\n");
+      out.write("\t\t\t}\n");
+      out.write("\t\t});\n");
+      out.write("\t</script>\n");
+      out.write("\t<!-- //cart-js -->\n");
+      out.write("\t<!-- /nav -->\n");
+      out.write("\t<script src=\"js/modernizr-2.6.2.min.js\"></script>\n");
+      out.write("\t<script src=\"js/classie.js\"></script>\n");
+      out.write("\t<script src=\"js/demo1.js\"></script>\n");
+      out.write("\t<!-- //nav -->\n");
+      out.write("\t<!--search-bar-->\n");
+      out.write("\t<script src=\"js/search.js\"></script>\n");
+      out.write("\t<!--//search-bar-->\n");
+      out.write("\t<!-- price range (top products) -->\n");
+      out.write("\t<script src=\"js/jquery-ui.js\"></script>\n");
+      out.write("\t<script>\n");
+      out.write("\t\t//<![CDATA[ \n");
+      out.write("\t\t$(window).load(function () {\n");
+      out.write("\t\t\t$(\"#slider-range\").slider({\n");
+      out.write("\t\t\t\trange: true,\n");
+      out.write("\t\t\t\tmin: 0,\n");
+      out.write("\t\t\t\tmax: 9000,\n");
+      out.write("\t\t\t\tvalues: [50, 6000],\n");
+      out.write("\t\t\t\tslide: function (event, ui) {\n");
+      out.write("\t\t\t\t\t$(\"#amount\").val(\"$\" + ui.values[0] + \" - $\" + ui.values[1]);\n");
+      out.write("\t\t\t\t}\n");
+      out.write("\t\t\t});\n");
+      out.write("\t\t\t$(\"#amount\").val(\"$\" + $(\"#slider-range\").slider(\"values\", 0) + \" - $\" + $(\"#slider-range\").slider(\"values\", 1));\n");
+      out.write("\n");
+      out.write("\t\t}); //]]>\n");
+      out.write("\t</script>\n");
+      out.write("\t<!-- //price range (top products) -->\n");
+      out.write("\n");
+      out.write("\t<!-- start-smoth-scrolling -->\n");
+      out.write("\t<script type=\"text/javascript\" src=\"js/move-top.js\"></script>\n");
+      out.write("\t<script type=\"text/javascript\" src=\"js/easing.js\"></script>\n");
+      out.write("\t<script type=\"text/javascript\">\n");
+      out.write("\t\tjQuery(document).ready(function ($) {\n");
+      out.write("\t\t\t$(\".scroll\").click(function (event) {\n");
+      out.write("\t\t\t\tevent.preventDefault();\n");
+      out.write("\t\t\t\t$('html,body').animate({\n");
+      out.write("\t\t\t\t\tscrollTop: $(this.hash).offset().top\n");
+      out.write("\t\t\t\t}, 1000);\n");
+      out.write("\t\t\t});\n");
+      out.write("\t\t});\n");
+      out.write("\t</script>\n");
+      out.write("\t<!-- //end-smoth-scrolling -->\n");
+      out.write("\t<script type=\"text/javascript\" src=\"js/bootstrap-3.1.1.min.js\"></script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("</body>\n");
+      out.write("\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #555;
+    height: 5%;
+    width: 95%;
+    position: absolute;
+}
+.navbar-options{
+    position: absolute;
+    left: 90%;
+    top: 25%;
+}
+.filter{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
+.navbar-brand{
+    position: absolute;
+    left: 5%;
+    
+}
+.brand-img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 100%;
+    
+}
+.brand-text{
+    
+}

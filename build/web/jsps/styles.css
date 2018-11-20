@@ -1,0 +1,184 @@
+body{
+    background-image: url("https://cdn.hipwallpaper.com/i/39/56/5PsASj.jpg");
+}
+
+.contenedor1{
+    height: 50%;
+    width: 100%;
+    background-color: rgba(194, 200, 108, 0.05);
+    border: 30px;
+    border-radius: 20px;
+    position: static;
+   
+}
+.elh1{
+    font-family:  fantasy;
+    font-size: 60px;
+    color:  #004284;
+    font-style:  oblique;
+    text-transform:  capitalize;
+    text-align:  center;
+    left: 35%;
+    top: 0%;
+    
+    
+}
+.estadistica{
+    width: 95%;
+    height: 600px;
+    background-color:  rgba(0, 0, 0, 0.1);
+    top: 0%;
+    left: 103%;
+    border-radius: 90px;    
+    position: absolute;
+}
+
+.contenedor2{
+    height: 50px;
+    width: 100%;
+    background-color:  rgba(194, 200, 108, 0.05);
+    
+    border: 2px;
+    
+    border-style:   dashed;
+    
+    border-color:   rgba(27, 47, 61, 0.3);
+    border-radius: 50px;
+    
+    
+}
+
+.elh4{
+    color:   #000;  
+    font-family:   cursive;
+    font-size: 20px;
+    text-align: center;
+    top: 170px;
+    left: 20%;
+    position: absolute;
+}
+.boton1{
+    font-family:  fantasy;
+    text-justify:  distribute;
+    
+    color:  #000;
+    background-color:   rgba(113, 122, 59, 0.5);
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+    height: 30px;
+    border: 10px;
+    border-radius: 50px;
+     position: absolute;
+    left: 37%;
+    top: 93%;
+    
+}
+.boton1:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color:  #fff;
+    border-color: rgba(0, 0, 0, 0.5);
+    border: 1px;
+    border-style:  dashed;
+}
+.boton2{
+    font-family:  fantasy;
+    text-justify:  distribute;
+    
+    color:  #000;
+    background-color:   rgba(113, 122, 59, 0.5);
+    text-align: center;
+    font-size: 30px;
+    border: 10px;
+    border-radius: 50px;
+    position: absolute;
+    left: 45%;
+    top: 93%;
+    width: 20%;
+    height: 30px;
+}
+.boton2:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color:  #fff;
+    border-color: rgba(0, 0, 0, 0.5);
+    border: 1px;
+    border-style:  dashed;
+    
+}
+.añadir{
+    width: 50%;
+    height: 30%;
+    background-color:  #000;
+    z-index: 5;
+}
+.añadir{
+    width: 50%;
+    height: 600px;
+    background-color:  rgba(0, 0, 0, 0.1);
+    top: 35%;
+    border-radius: 90px;    
+    position: fixed;
+}
+ .entrada1 , .entrada2 , .entrada3 , .entrada4 , .entrada5{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 10px;
+    color:   #F5F5F5;
+    font-size: 20px;
+    width: 100%;    
+    text-align: center;
+    height: 10%;    
+    
+}
+.entrada1{
+    
+    
+    left: 0%;
+    top: 10%;
+    position: absolute;
+}
+.entrada2{
+    
+    
+    left: 0%;
+    top: 25%;
+    position: absolute;
+}
+.entrada3{
+    
+    
+    left: 0%;
+    top: 45%;
+    position: absolute;
+}
+.entrada4{
+    
+    
+    left: 0%;
+    top: 65%;
+    position: absolute;
+}
+.entrada5{
+    
+    
+    left: 0%;
+    top: 80%;
+    position: absolute;
+}
+.elh3{
+    position: absolute;
+    left: 37%;
+    color: #004284;
+    font-style:  oblique;
+    text-transform:  capitalize;
+}
+.volv{
+    color:red;
+    position: absolute;
+    top: 100%;
+}
+.volv:hover{
+    color:  lime;
+    font-size: 20px;
+}
+  

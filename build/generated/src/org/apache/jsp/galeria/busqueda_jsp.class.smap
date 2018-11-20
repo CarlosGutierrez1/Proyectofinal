@@ -1,0 +1,20 @@
+SMAP
+busqueda_jsp.java
+JSP
+*S JSP
+*F
++ 0 busqueda.jsp
+galeria/busqueda.jsp
+*L
+5,25:48
+30,22:74
+51,18:96
+70:116,2
+71,2:118
+73:120,5
+74,3:125
+77,12:129
+88,5:141
+93:146,3
+94,36:149
+*E
