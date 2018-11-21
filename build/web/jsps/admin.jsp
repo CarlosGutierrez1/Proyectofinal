@@ -42,8 +42,35 @@
         </class>
         <!--<img src="../cart/images/ab.jpg"> -->
         <div class="estadistica">
-            <input type="button" onClick="window.location='verestadisticas.jsp'" value="ver las estadisticas del sitio web" class="boton2">
+            
+            <iframe src="verestadisticaspago.jsp"  style="width: 500px; height: 500px;" class="eliframe" id="ven">
+                    </iframe>
+            <iframe src="verestadisticascompra.jsp"  style="width: 500px; height: 500px;" class="eliframe2" id="ven2">
+                    </iframe>
+            
+            <input type="button" onclick="javascript:abrir()" value="ver el pago mas usado" class="boton2">
+            <input type="button" onclick="javascript:cerrar(),cerrar2()" value="cerrar" class="boton22">
+            <input type="button" onclick="javascript:abrir2()" value="ver el articulo mas comprado" class="boton3">
+            
+            
         </div>
         <p class="volv"><a href="../index.html" style="text-decoration: none;" class="volv"><--Volver</a></p>
+        
+        
+        <script>
+        function abrir(){
+
+    document.getElementById("ven").style.display="block";
+  }
+  function cerrar(){
+    document.getElementById("ven").style.display="none";
+  }
+  function abrir2(){
+      document.getElementById("ven2").style.display="block";
+  }
+  function cerrar2(){
+      document.getElementById("ven2").style.display="none";
+  }
+  </script>
     </body>
 </html>
