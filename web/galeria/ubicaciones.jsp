@@ -51,7 +51,7 @@
             
             
 
-            String url1 = "https://www.google.com/maps/embed/v1/view?key=AIzaSyAFYxvo5TP9xd0W98qM0aSSP1KE5iNNcq0&center="+o+","+p+"&zoom=18&maptype=satellite";
+            String url1 = "https://www.google.com/maps/embed/v1/view?key="AQUI VA LA KEY "&center="+o+","+p+"&zoom=18&maptype=satellite";
             
       %>
          <h1><%out.print(url1);%></h1>
