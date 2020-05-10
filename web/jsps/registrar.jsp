@@ -32,7 +32,7 @@
         
         
         Class.forName("com.mysql.jdbc.Driver");
-        java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+        java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
         Statement st=con.createStatement();
         ResultSet rs;
         int i=st.executeUpdate("insert into usuario(nombre, apellido, fechanacimiento, email, contraseña) "
