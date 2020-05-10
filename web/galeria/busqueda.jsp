@@ -32,7 +32,7 @@
         int id = Integer.parseInt(request.getParameter("autoselect"));
              
              Class.forName("com.mysql.jdbc.Driver");
-             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
              Statement s3=con.createStatement();
              ResultSet rs3= s3.executeQuery("select A.nombre, O.imagen, o.id_obra, o.idubicacion from autor A inner join Obra o on A.id_autor=O.idautor where A.id_autor=" + id);
              
