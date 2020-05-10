@@ -25,7 +25,7 @@
         
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
             Statement st=con.createStatement();
             
             ResultSet rs= st.executeQuery("select p.tipo_pago, count(f.id_factura) from factura f inner join pago p on f.idpago=p.id_tipopago group by p.id_tipopago having p.id_tipopago in (select p.id_tipopago from pago p)");
