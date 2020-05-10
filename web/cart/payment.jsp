@@ -18,9 +18,9 @@
     <body>
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
-            java.sql.Connection con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
-            java.sql.Connection con3 = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
+            java.sql.Connection con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
+            java.sql.Connection con3 = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
             Statement st=con.createStatement();
             String usuario = request.getParameter("usuario");
             session.putValue("userid", usuario);
