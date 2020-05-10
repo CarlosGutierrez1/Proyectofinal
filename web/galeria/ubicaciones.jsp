@@ -32,7 +32,7 @@
           String idobra = request.getParameter("nomm2");
           String idubicacion = request.getParameter("laubicacion");
           Class.forName("com.mysql.jdbc.Driver");
-             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
              Statement s3=con.createStatement();
              ResultSet rs3= s3.executeQuery("select U.latitud, U.longitud from ubicacion u inner join Obra o on o.idubicacion=u.id_ubicacion where u.id_ubicacion ="+idubicacion+" and o.id_obra="+idobra);
              ArrayList list1 = new ArrayList();
