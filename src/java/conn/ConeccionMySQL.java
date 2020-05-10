@@ -18,7 +18,7 @@ public class ConeccionMySQL {
     String strPuerto = "3306";
     String strNombreDB = "Proyectofinal";
     String strUsuario = "root";
-    String strPassword = "PEpe20CJ23";
+    String strPassword = "";
     
     public Connection setConeccion() throws ClassNotFoundException,
 			SQLException, InstantiationException, IllegalAccessException {
