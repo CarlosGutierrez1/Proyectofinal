@@ -28,7 +28,7 @@
         <%
             String imagen = request.getParameter("nomm");
             Class.forName("com.mysql.jdbc.Driver");
-             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "PEpe20CJ23");
+             java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Proyectofinal", "root", "");
              Statement s3=con.createStatement();
              ResultSet rs3= s3.executeQuery("select C.comentario, U.nombre, C.calificacion from calificacion c inner join usuario u on c.idusuario=u.id_usuario "
                      + "inner join obra o on c.idobra=o.id_obra where o.id_obra= " + imagen );
